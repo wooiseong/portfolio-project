@@ -294,7 +294,7 @@ function feedback() {
   const container = document.querySelector('.message_container')
   const p = new Promise(((resolve,reject) => {
     const xhr = new XMLHttpRequest()
-    xhr.open('POST', 'https://portfolio-eta-dusky-51.vercel.app/portfolio')
+    xhr.open('POST', 'https://portfolio-node-js-three.vercel.app/portfolio')
     xhr.addEventListener('loadend', () => {
       if (xhr.status >=200 && xhr.status < 300 ){
         resolve((JSON.parse(xhr.response)))
