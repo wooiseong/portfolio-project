@@ -329,9 +329,9 @@ function feedback() {
       container.style.borderColor = '#FF2D2D'
       container.style.color = '#CE0000'
     }
-
     container.addEventListener("animationend", () => {
       container.style.display = 'none'
+      form.reset()
     });
   }).catch(error => {
     console.dir(error)
